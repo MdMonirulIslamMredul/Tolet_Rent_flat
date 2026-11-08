@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rentBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d6efd" />
+      <stop offset="100%" stop-color="#0b5ed7" />
+    </linearGradient>
+    <linearGradient id="rentRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc3545" />
+      <stop offset="100%" stop-color="#b02a37" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0d6efd" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- LOGO ICON BADGE -->
+  <g transform="translate(10, 10)" filter="url(#softShadow)">
+    <!-- Badge Background -->
+    <rect x="0" y="0" width="90" height="90" rx="20" fill="url(#rentBlueGrad)" />
+
+    <!-- Modern Stylized House / Building -->
+    <!-- Roof Peak -->
+    <path d="M 22 46 L 45 24 L 68 46" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Building Body -->
+    <rect x="27" y="44" width="36" height="32" rx="4" fill="#ffffff" />
+    
+    <!-- Windows Matrix (representing flats / QR grid) -->
+    <rect x="33" y="50" width="9" height="9" rx="2" fill="#0d6efd" />
+    <rect x="48" y="50" width="9" height="9" rx="2" fill="#0d6efd" />
+    <rect x="33" y="63" width="9" height="9" rx="2" fill="#0d6efd" />
+    <rect x="48" y="63" width="9" height="9" rx="2" fill="#0d6efd" />
+
+    <!-- Smart QR Accent Pin (Top Right of Badge) -->
+    <g transform="translate(56, 12)">
+      <circle cx="16" cy="16" r="15" fill="url(#rentRedGrad)" stroke="#ffffff" stroke-width="2.5" />
+      <!-- QR Pattern Inside Pin -->
+      <rect x="9" y="9" width="14" height="14" rx="2" fill="#ffffff" />
+      <rect x="11" y="11" width="10" height="10" fill="#dc3545" />
+      <rect x="13" y="13" width="6" height="6" fill="#ffffff" />
+      <rect x="15" y="15" width="2" height="2" fill="#dc3545" />
+    </g>
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <g transform="translate(122, 10)">
+    <!-- Main Brand Name -->
+    <text x="0" y="54" font-family="'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="46" font-weight="800" letter-spacing="-1">
+      <tspan fill="#0d6efd">Rent</tspan><tspan fill="#dc3545">BD</tspan>
+    </text>
+
+    <!-- Smart QR Badge -->
+    <rect x="180" y="24" width="76" height="26" rx="13" fill="#e7f1ff" stroke="#b6d4fe" stroke-width="1.2" />
+    <text x="218" y="41" font-family="'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0d6efd" text-anchor="middle">
+      SMART QR
+    </text>
+
+    <!-- Tagline Subtitle -->
+    <text x="2" y="77" font-family="'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2" fill="#64748b">
+      RENTAL PLATFORM
+    </text>
+  </g>
+</svg>
